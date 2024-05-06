@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'EcoSphere',
+  title: 'ProJet By Wond',
   description: 'A Realm of Student Talent by WOND',
 }
 
