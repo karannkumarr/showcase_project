@@ -18,7 +18,7 @@ interface User {
 }
 
 interface Project {
-  _id: string | undefined;
+  _id: string;
   title: string;
   description: string;
   createdBy: string; // Assuming createdBy is the ID of the user who created the project
