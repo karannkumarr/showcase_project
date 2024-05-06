@@ -12,7 +12,7 @@ const Navbar = () => {
 			<div className="flex-1 flexStart gap-10">
 				<Link href="/">
 					<Image
-						src="/logo.svg"
+						src="/mainLogo.svg"
 						width={116}
 						height={43}
 						alt="logo"
@@ -33,10 +33,14 @@ const Navbar = () => {
 			<div className="flexCenter gap-4">
 				{session ? (
 					<>
-						{/* <ProfileMenu session={session} /> */}
+						{/* <ProfileMenu /> */}
 
 						<Link href="/create-project">
 							<Button title="Share work" />
+						</Link>
+
+						<Link href="/profile/6637c3c83fb71dbe918a81f6">
+							<Button title="My Profile" />
 						</Link>
 					</>
 				) : (
