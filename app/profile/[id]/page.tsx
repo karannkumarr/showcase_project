@@ -9,6 +9,25 @@ type Props = {
     },
 }
 
+interface User {
+    id: string;
+    name: string;
+    avatarUrl: string;
+    // Add other properties as needed
+  }
+  
+  interface Project {
+    _id: string;
+    title: string;
+    description: string;
+    image: string;
+    liveSiteUrl: string;
+    githubUrl: string;
+    category: string;
+    createdBy: string; // Assuming createdBy is the ID of the user who created the project
+  }
+  
+
 const UserProfile = ({ params }: Props) => {
     const [project, setProject] = useState<Project | null>(null);
     const [creator, setCreator] = useState<User | null>(null);
